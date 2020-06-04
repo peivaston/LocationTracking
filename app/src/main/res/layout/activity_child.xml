@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ChildActivity">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Ved at du deler din posisjon med dine foreldre, kan de være trygge på at du kommer trygt fram"
+            android:textColor="#000"
+            android:textSize="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/start_journey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.74" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:apiKey="@string/google_maps_api_key"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/stop_journey"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/child_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/location_enable" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_journey"
+            android:layout_width="380dp"
+            android:layout_height="64dp"
+            android:text="Start reise"
+            android:textSize="14.5sp"
+            android:visibility="gone"
+            app:backgroundTint="#51b49f"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Switch
+            android:id="@+id/location_enable"
+            android:layout_width="127dp"
+            android:layout_height="34dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:text="Del lokasjon"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.533" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stop_journey"
+            android:layout_width="380dp"
+            android:layout_height="64dp"
+            android:text="Stop reise"
+            android:visibility="gone"
+            app:backgroundTint="#990000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="14.5sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Logg ut"
+            app:backgroundTint="#990000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/emergency_call"
+            android:layout_width="64dp"
+            android:layout_height="62dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="180dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/emergency_call"
+                android:background="?android:attr/selectableItemBackground"/>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="171dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tool_bar_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

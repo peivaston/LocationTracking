@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MapActivity">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:apiKey="@string/google_maps_api_key"
+            android:scaleType="centerCrop"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/emergency_call"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="180dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/emergency_call"
+                android:background="?android:attr/selectableItemBackground"/>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

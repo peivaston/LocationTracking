@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LocationTracking</string>
+    <string name="no_internet">Ingen tilgang til internet</string>
+    <string name="required">Krevd</string>
+    <string name="n_a">N/A</string>
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+    <string name="email">Epost</string>
+    <string name="password">Passord</string>
+    <string name="sign_up_with_email">Opprett ny profil</string>
+    <string name="email_is_invalid">Eposten er ugyldig</string>
+    <string name="child">Barn</string>
+    <string name="track_location">Track lokasjonen</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="unable_gps_location">Skru på gps</string>
+    <string name="password_reset_email_Sent">Epost for å nullstille passord har blitt sendt</string>
+</resources>

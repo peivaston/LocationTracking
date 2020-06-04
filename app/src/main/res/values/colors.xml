@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#03DAC5</color>
+    <string name="google_maps_api_key">AIzaSyD23P9P2S1yRdE_yr-cgengLKENR_B-PHw</string>
+    <color name="light_black">#2E2E2E</color>
+    <color name="light_grey">#F5F5F5</color>
+    <color name="green_color">#51b49f</color>
+</resources>
